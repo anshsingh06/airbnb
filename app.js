@@ -5,6 +5,17 @@ const mongoose = require ("mongoose");
 // const Chat = require("./models/chats.js");
 
 
+const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+
+main()
+.then(()=>{
+    console.log("connected to DB");
+})
+.catch ((err)=> console.log(err));
+async function main(){
+    await mongoose.connect(MONGO_URL);
+}
+
 
 app.get("/", (req,res)=>{
     res.send("Hi,I am root");
