@@ -1,1 +1,1 @@
-hello it is the project Wander Lust a airbnb clone.
+hello it is the project Wander Lust an airbnb clone.
